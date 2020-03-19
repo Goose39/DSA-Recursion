@@ -1,6 +1,6 @@
 const binaryConv = (num) => {
   //Base Case
-  if (num == 0) {
+  if (num === 0) {
     return 0
   }
   //General Case
