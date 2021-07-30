@@ -26,7 +26,7 @@ solveMaze = (maze, i, j, solution) => {
     return solveMaze(maze, i, j+1, solution)
   } else if (maze[i][j-1] != '*') {
     solution += 'L'
-    return solveMaze(maze, i, j-11, solution)
+    return solveMaze(maze, i, j-1, solution)
   } else if (maze[i-1][j] != '*' && i-1 >= 0) {
     solution += 'U'
     return solveMaze(maze, i-1, j, solution)
